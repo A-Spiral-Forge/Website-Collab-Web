@@ -10,15 +10,86 @@
     <header>
         <nav class="navbar">
             <ul class="links">
-                <img src="./images/64008676.jpg" alt="Logo" id="logo">
-                <li class="btn"><a href="#about" class="link"></a></li>
-                <li class="btn"><a href="#gallery" class="link"></a></li>
-                <li class="btn"><a href="#education" class="link"></a></li>
-                <li class="btn"><a href="#projects" class="link"></a></li>
                 <img src="./images/spiralforge.png" alt="SpiralForge" class="text">
-                <li class="btn"><a href="contactme" class="link"></a></li>
+                <li class="btn"><a href="#about" class="link">About</a></li>
+                <li class="btn"><a href="#education" class="link">Education</a></li>
+                <li class="btn"><a href="#projects" class="link">Projects</a></li>
+                <li class="btn"><a href="contactme" class="link">Contact Me</a></li>
             </ul>
         </nav>
     </header>
+
+    <div id="gallery">
+        <p>
+            Welcome <span id="name">Guest</span>!
+        </p>
+    </div>
+
+    <div class="about">
+        <a name="about"></a>
+        <h3 id="intro">Hi! I'm Abhay Parihar.</h3>
+        <div class="aboutme">
+            <img src="./images/me.png" alt="Main Image" class="mainimg">
+            <p id="aboutme">I'm a begginer in Web Development. I'm currently learning JavaScript. Also focusing on Cybersecurity. I am 17 years now. I am living in Nagalwadi Buzurg, Madhya Pradesh, India. I am currently pursuing Bachelor of Technology in Information Technology from Indian Institute of Information Technology, Allahabad, Uttar Pradesh, India.</p>
+        </div>
+    </div>
+
+    <div class="edu">
+        <a name="education"></a>
+        <p id="edu">Education</p>
+        <div id="row">
+            <div class="col" id="col1">
+                <p class="head" id="head1">Secondary Education</p>
+                <p class="matter" id="matter1">Completed from Jawahar Navodaya Vidhyalaya, Ozhar, Madhya Pradesh, India in Central Board of Secondary Education (CBSE) with 84.4% in 10th Standard.</p>
+            </div>
+            <div class="col" id="col2">
+                <p class="head" id="head2">Senior Secondary Education</p>
+                <p class="matter" id="matter2">Completed from Macro Vision Academy, Burhanpur, Madhya Pradesh, India in Central Board of Secondary Education (CBSE) with 90% in 12th Standard.</p>
+            </div>
+            <div class="col" id="col3">
+                <p class="head" id="head3">Graduation</p>
+                <p class="matter" id="matter3">Presently doing from Indian Institute of Information Technology, Allahabad, Uttar Pradesh, India in Information Technology with 8.25 CGPA.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <div class="project" id="project1">
+            <h4>The Art of Code</h4>
+            <p class="projectinfo">Private repository. Working on this with my batchmates. Provides all esssntial study materials. Also include multiplayer games for fun.</p>
+            <ul class="weblinks">
+                <li class="repo"></li>
+                <li class="live"></li>
+            </ul>
+        </div>
+        <div class="project" id="project2">
+            <h4>GetVac</h4>
+            <p class="projectinfo">Public Repository. It is finished. It is designed for seletion in Web Development wing of GeekHaven IIITA Round-1.</p>
+            <ul class="weblinks">
+                <li class="repo"></li>
+                <li class="live"></li>
+            </ul>
+        </div>
+        <div class="project" id="project3">
+            <h4>My Portfolio</h4>
+            <p class="projectinfo">Public Repository. It is made for making portfolio of mine. It is now undergiong project. Same project is ongoing for Collaborative Web task in Opencode'21 but both are different in design.</p>
+            <ul class="weblinks">
+                <li class="repo"></li>
+                <li class="live"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contactme">
+        <form action="feedback.php">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <label for="message">Massage/Feedback/Suggesion</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter a feedback and/or Suggestion and/or Message for me. your response means a lot for me." required></textarea>
+            <input type="submit" value="Submit My Response">
+        </form>
+    </div>
 </body>
 </html>
